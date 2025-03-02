@@ -17,9 +17,9 @@ let fakabox =document.getElementById("faka");
         alert("Board update successfully")
 
        
-        let sum= fixone --  ;
+        let sum=  -- fixone  ;
         document.getElementById("one").innerText = sum;
-        let sum2 = fixtwo ++ ;
+        let sum2 =  ++ fixtwo;
         document.getElementById("two").innerText =sum2;
         // event.target.button = "disable"
         event.target.disabled  = true;
