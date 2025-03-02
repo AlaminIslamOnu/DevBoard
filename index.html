@@ -32,7 +32,7 @@
         </div>
         <div class="bg-[#F4F7FF]">
           <img src="./assets/checkbox.png" alt="">
-          <h2 class="ml-2 font-bold text-2xl">23</h2>
+          <h2 id="two" class="ml-2 font-bold text-2xl">23</h2>
           <button class="ml-9"><img src="./assets/theme-btn.png" alt=""></button>
         </div>
       </div>
@@ -44,7 +44,7 @@
             <img class="h-[28px] w-[28px]" src="./assets/checkbox.png" alt="">
             <div>
             <p>Task Assigned</p> 
-            <h2>05</h2>
+            <h2 id="one">05</h2>
         </div>
         </div>
         <div id="banner" class="flex  bg-[#6C7FFA]  justify-center gap-2 shadow-md  p-8 rounded border ">
@@ -55,7 +55,11 @@
         </div>
         <div class="flex bg-[#F4F7FF]  justify-center gap-2 shadow-md  p-8 rounded border ">
             <img class="h-[28px] w-[28px]" src="./assets/calender.png" alt="">
-            <h2>fri, feb 28 ,2025</h2>
+            <p id="date container"></p>
+            <script>
+              const newDate = new Date().toDateString();
+              document.getElementById("date container").innerHTML = newDate;
+            </script>
             
         </div>
         
@@ -83,9 +87,9 @@
                     <div class="card bg-[#F4F7FF]  shadow-xl">
           
                         <div class="card-body">
-                          <button class="btn w-[114px] bg-white shadow">ShopEase</button>
-                          <h2 class="font-semibold text-2xl">Fix Mobile Button Issue </h2>
-                          <p class="p-3 bg-white shadow">Debug using Chrome DevTools, check for overlapp..</p>
+                          <button class="btn w-[114px] bg-white shadow">CloudSync</button>
+                          <h2 class="font-semibold text-2xl">Add Dark Mode </h2>
+                          <p class="p-3 bg-white shadow">Store the user's preference in localStorage, update CSS variables dynamically</p>
                           <p class="border-b border-dashed mt-2"></p>
                           <div class="flex  justify-between ">
                           <div>
@@ -100,9 +104,9 @@
                     <div class="card bg-[#F4F7FF]  shadow-xl">
           
                         <div class="card-body">
-                          <button class="btn w-[114px] bg-white shadow">ShopEase</button>
-                          <h2 class="font-semibold text-2xl">Fix Mobile Button Issue </h2>
-                          <p class="p-3 bg-white shadow">Debug using Chrome DevTools, check for overlapp..</p>
+                          <button class="btn w-[114px] bg-white shadow">SwiftPay</button>
+                          <h2 class="font-semibold text-2xl">Optimize  Home page  </h2>
+                          <p class="p-3 bg-white shadow">Debug using Chrome DevTools, check for overlappin</p>
                           <p class="border-b border-dashed mt-2"></p>
                           <div class="flex  justify-between ">
                           <div>
@@ -117,9 +121,9 @@
                     <div class="card bg-[#F4F7FF]  shadow-xl ">
           
                         <div class="card-body">
-                          <button class="btn w-[114px] bg-white shadow">ShopEase</button>
-                          <h2 class="font-semibold text-2xl">Fix Mobile Button Issue </h2>
-                          <p class="p-3 bg-white shadow">Debug using Chrome DevTools, check for overlapp..</p>
+                          <button class="btn w-[114px] bg-white shadow">Meta</button>
+                          <h2 class="font-semibold text-2xl">Add new emoji 🤲 </h2>
+                          <p class="p-3 bg-white shadow">Debug using Chrome DevTools, check for overlappin</p>
                           <p class="border-b border-dashed mt-2"></p>
                           <div class="flex  justify-between ">
                           <div>
@@ -134,9 +138,9 @@
                     <div class="card bg-[#F4F7FF]  shadow-xl">
           
                         <div class="card-body">
-                          <button class="btn w-[114px] bg-white shadow">ShopEase</button>
-                          <h2 class="font-semibold text-2xl">Fix Mobile Button Issue </h2>
-                          <p class="p-3 bg-white shadow">Debug using Chrome DevTools, check for overlapp..</p>
+                          <button class="btn w-[114px] bg-white shadow">Google LLC</button>
+                          <h2 class="font-semibold text-2xl">Integrate OpenAI API </h2>
+                          <p class="p-3 bg-white shadow">Debug using Chrome DevTools, check for overlappin</p>
                           <p class="border-b border-dashed mt-2"></p>
                           <div class="flex  justify-between ">
                           <div>
@@ -151,9 +155,9 @@
                     <div class="card bg-[#F4F7FF]  shadow-xl">
           
                         <div class="card-body ">
-                          <button class="btn w-[114px] bg-white shadow">ShopEase</button>
-                          <h2 class="font-semibold text-2xl">Fix Mobile Button Issue </h2>
-                          <p class="p-3 bg-white shadow">Debug using Chrome DevTools, check for overlapp..</p>
+                          <button class="btn w-[114px] bg-white shadow">Glassdoar</button>
+                          <h2 class="font-semibold text-2xl">Improve Job searching  </h2>
+                          <p class="p-3 bg-white shadow">Debug using Chrome DevTools, check for overlappin.</p>
                           <p class="border-b border-dashed mt-2"></p>
                           <div class="flex  justify-between ">
                           <div>
@@ -176,9 +180,11 @@
             <img src="./assets/activity.png" alt="">
             <h2>Activity Log</h2>
           </div><br>
-          <button class="btn bg-[#3752FD] ml-[80px]">Clear History</button> 
+          <button onclick="clearText()" id="delete" class="btn bg-[#3752FD] ml-[70px]">Clear History</button> 
           <p class="border-dashed border-b-2 mt-2"></p>
-          <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>  
+          <div  id="container">
+            
+          </div>
         
         </div>
       </div>
